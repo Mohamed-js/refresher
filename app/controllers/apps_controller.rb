@@ -8,6 +8,8 @@ class AppsController < ApplicationController
             sleep 20
             Net::HTTP.get(URI('https://socket-og0b.onrender.com/asd'))
             sleep 20
+            Net::HTTP.get(URI('https://computech.onrender.com'))
+            sleep 20
         end
         render json: "Done...!"
     end
