@@ -1,0 +1,15 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  port: 5432
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  url: postgres://dxfvoiyu:h5a7TCAIME1BmYh12jFTEcPeMiUJ--0a@dumbo.db.elephantsql.com/dxfvoiyu
+  # username: postgres
+  # password: postgresql
+
+production:
+  <<: *default
+  url: postgres://dxfvoiyu:h5a7TCAIME1BmYh12jFTEcPeMiUJ--0a@dumbo.db.elephantsql.com/dxfvoiyu
