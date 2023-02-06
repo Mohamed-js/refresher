@@ -11,7 +11,7 @@ class AppsController < ApplicationController
             Net::HTTP.get(URI('https://computech.onrender.com'))
             sleep 20
         end
-        render json: "Done...!"
+        render json: "Done....!"
     end
 
     def my_refresher
